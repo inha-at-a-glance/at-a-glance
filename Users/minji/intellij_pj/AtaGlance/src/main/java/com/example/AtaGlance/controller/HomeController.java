@@ -1,4 +1,4 @@
-package com.example.AtaGlance;
+package com.example.AtaGlance.controller;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;

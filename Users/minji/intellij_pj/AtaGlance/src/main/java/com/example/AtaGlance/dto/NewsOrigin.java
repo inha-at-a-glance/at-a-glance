@@ -8,16 +8,18 @@ import lombok.Setter;
 public class NewsOrigin {
     private Integer newsId;
     private String sourceBc;
-    private String sourceUrl;
+    private String sourceURL;
+    private Integer category;
     private String videoFilePath;
 
     // Constructors
     public NewsOrigin() {}
 
-    public NewsOrigin(Integer newsId, String sourceBc, String sourceUrl, String videoFilePath) {
+    public NewsOrigin(Integer newsId, String sourceBc, String sourceURL, Integer category, String videoFilePath) {
         this.newsId = newsId;
         this.sourceBc = sourceBc;
-        this.sourceUrl = sourceUrl;
+        this.sourceURL = sourceURL;
+        this.category = category;
         this.videoFilePath = videoFilePath;
     }
 
