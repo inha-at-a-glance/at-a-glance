@@ -9,8 +9,9 @@
 <h3>뉴스 등록 결과</h3>
 
 <p>
-    news_ID: ${news.newsId} 	<br>
-    URL: ${news.sourceURL}	<br>
+    news_ID: ${news.newsId}     <br>
+    출처: ${news.title}	<br>
+    URL: ${news.sourceUrl}	<br>
     출처: ${news.sourceBc}	<br>
     카테고리: ${news.category}	<br>
 </p>

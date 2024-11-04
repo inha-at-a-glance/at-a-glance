@@ -1,0 +1,6 @@
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://ataglance-db.czwmu86ms4yl.us-east-1.rds.amazonaws.com:3306/ataglance?serverTimezone=Asia/Seoul&characterEncoding=UTF-8
+    username: admin
+    password: {pw}

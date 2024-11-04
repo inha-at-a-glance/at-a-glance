@@ -1,5 +1,9 @@
 package com.example.AtaGlance.dto;
 
+import java.time.LocalDateTime;
+import java.util.List;
+import jakarta.validation.constraints.NotNull;
+
 import lombok.Getter;
 import lombok.Setter;
 
@@ -7,20 +11,32 @@ import lombok.Setter;
 @Setter
 public class VideoProc {
     private Integer videoId;
+
+    @NotNull
     private Integer newsId;
-    private Integer audioId;
-    private String extractFramePath;
-    private String objectsPath;
 
-    // Constructors
-    public VideoProc() {}
+    @NotNull
+    private Integer textId;
 
-    public VideoProc(Integer videoId, Integer newsId, Integer audioId, String extractFramePath, String objectsPath) {
+    private List<String> extractFramePath;
+
+    private List<String> objectsPath;
+
+    private LocalDateTime createdAt;
+
+    private LocalDateTime updatedAt;
+
+    // Constructor
+    public VideoProc(Integer videoId, Integer newsId, Integer textId, List<String> extractFramePath,
+                     List<String> objectsPath, LocalDateTime createdAt, LocalDateTime updatedAt) {
         this.videoId = videoId;
         this.newsId = newsId;
-        this.audioId = audioId;
+        this.textId = textId;
         this.extractFramePath = extractFramePath;
         this.objectsPath = objectsPath;
+        this.createdAt = createdAt;
+        this.updatedAt = updatedAt;
     }
-}
 
+    // Getters and Setters
+}

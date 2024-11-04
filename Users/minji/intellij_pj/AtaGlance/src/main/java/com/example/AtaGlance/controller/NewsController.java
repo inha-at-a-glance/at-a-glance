@@ -1,7 +1,6 @@
 package com.example.AtaGlance.controller;
 
-import com.example.AtaGlance.dto.NewsOrigin;
-import com.example.AtaGlance.dto.CardNews;
+import com.example.AtaGlance.dto.News;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -25,7 +24,7 @@ public class NewsController {
      * '/regist' 요청이 post 방식으로 들어왔을 때 전달된 User 객체를 regist_result로 연결한다.
      */
     @PostMapping("/register")
-    public ModelAndView doNewsRegist(NewsOrigin news) {
+    public ModelAndView doNewsRegist(News news) {
         ModelAndView mav = new ModelAndView();
         // 어디로 연결할지 설정
         mav.setViewName("newsList");
